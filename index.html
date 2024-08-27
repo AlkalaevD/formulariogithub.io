@@ -1,0 +1,185 @@
+<!DOCTYPE html >
+< html  lang =" es " >
+< cabeza >
+    < meta  charset = " UTF-8 " >
+    < meta  name = " ventana gráfica " content = " ancho=ancho-del-dispositivo, escala-inicial=1.0 " >
+    <!--título-->
+    < título > Productos </ título >
+    < link  rel =" icono " type =" imagen/x-icon " href =" imagenes/icono.png " >
+    <!--bootstrapp-->
+    < link  href =" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css " rel =" hoja de estilo " integrity =" sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH " crossorigin =" anónimo " >
+    < link  rel =" hoja de estilo " href =" https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css " >
+    <!--css-->
+    < link  href =" style.css " rel =" hoja de estilo " >
+    <!--reloj de arranque-->
+    < link  rel =" hoja de estilos " href =" https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.3/slate/bootstrap.rtl.min.css " integrity =" sha512-8n7mJPYc1PYv0QSKTgmWUNAXc3ivx3bf1m2Pb/Dn+StJ8D69Hyxwq+aMw6NUreHzSMlwB6PqT5JBiDgUCyjIpg== " crossorigin =" anonymous " referrerpolicy =" sin-referencia " />
+</cabeza>​​
+
+< cuerpo >
+
+<!--barra de navegación-->
+
+< nav  class =" barra de navegación barra de navegación-expandir-lg bg-primary " data-bs-theme =" oscuro " >
+    < div  class =" contenedor-fluido " >
+      < a  class =" navbar-brand " href =" # " > < font  style =" vertical-align: heritage; " > < font  style =" vertical-align: heritage; " > < i  class =" bi bi-vimeo " > </ i > Productos </ font > </ font > </ a >
+      < botón  clase =" navbar-toggler " tipo =" botón " data-bs-toggle =" contraer " data-bs-target =" #navbarColor01 " aria-controls =" navbarColor01 " aria-expanded =" false " aria-label =" Cambiar navegación " >
+        < span  class =" icono-de-alternador-de-barra-de-navidad " > </ span >
+      </ botón >
+      < div  class =" colapsar barra de navegación-colapsar " id =" navbarColor01 " >
+        < ul  class =" barra de navegación-nav me-auto " >
+          < li  class =" elemento de navegación " >
+            < a  class =" nav-link active " href =" # " > < font  style =" vertical-align: heritage; " > < font  style =" vertical-align: heritage; " > Quienes Somos
+              </ font > </ font > < span  class = " oculto visualmente " > < font  style = " alineación vertical: heredar; " > < font  style = " alineación vertical: heredar; " > (actual) </ font > </ font > </ span >
+            </a>​​
+          </li>​​
+          < li  class =" elemento de navegación " >
+            < a  class =" nav-link " href =" # " > < font  style =" vertical-align: heritage; " > < font  style =" vertical-align: heritage; " > Características </ font > </ font > </ a >
+          </li>​​
+          < li  class =" elemento de navegación " >
+            < a  class =" nav-link " href =" # " > < font  style =" vertical-align: heritage; " > < font  style =" vertical-align: heritage; " > Precios </ font > </ font > </ a >
+          </li>​​
+          < li  class =" elemento de navegación " >
+            < a  class =" nav-link " href =" # " > < font  style =" vertical-align: heritage; " > < font  style =" vertical-align: heritage; " > Acerca de </ font > </ font > </ a >
+          </li>​​
+          < li  class =" elemento de navegación desplegable " >
+            < a  class =" nav-link dropdown-toggle " data-bs-toggle =" dropdown " href =" # " role =" botón " aria-haspopup =" true " aria-expanded =" false " > < font  style =" vertical-align: heritage; " > < font  style =" vertical-align: heritage; " > Menú desplegable </ font > </ font > </ a >
+            < div  class =" menú desplegable " >
+              < a  class =" dropdown-item " href =" # " > < font  style =" vertical-align: heritage; " > < font  style =" vertical-align: heritage; " > Acción </ font > </ font > </ a >
+              < a  class =" dropdown-item " href =" # " > < font  style =" vertical-align: heritage; " > < font  style =" vertical-align: heritage; " > Otra acción </ font > </ font > </ a >
+              < a  class =" dropdown-item " href =" # " > < font  style =" vertical-align: heritage; " > < font  style =" vertical-align: heritage; " > Algo más aquí </ font > </ font > </ a >
+              < div  class = " divisor desplegable " > </div>
+              < a  class =" dropdown-item " href =" # " > < font  style =" vertical-align: heritage; " > < font  style =" vertical-align: heritage; " > Enlace separado </ font > </ font > </ a >
+            </div>​​
+          </li>​​
+        </ul>​​
+        < formulario  clase =" d-flex " >
+          < input  class =" form-control me-sm-2 " type =" search " placeholder =" Buscar " >
+          < botón  clase =" btn btn-secondary my-2 my-sm-0 " tipo =" enviar " > < estilo de fuente  =" vertical-align: heredar; " > < estilo de fuente =" vertical-align: heredar; " > Buscar </ fuente > </ fuente > </ botón > 
+        </formulario>​​
+      </div>​​
+    </div>​​
+  </nav>​​
+  < div  class =" contenedor " >
+    < h1  class =" text-center my-4 " > Aplicación de Productos </ h1 >
+
+    <!-- Formulario para agregar productos -->
+    < form  id =" formularioProducto " >
+        < div  class =" mb-3 " >
+            < etiqueta  para =" nombre del producto " clase =" etiqueta-formulario " > Nombre del Producto </ etiqueta >
+            < input  type =" text " class =" form-control " id =" productName " requerido >
+        </div>​​
+        < div  class =" mb-3 " >
+            < label  for =" productPrice " class =" form-label " > Precio del producto </ label >
+            < input  type =" number " class =" form-control " id =" productPrice " required >
+        </div>​​
+        < botón  type =" submit " class =" btn btn-primary " id =" submitButton " > Agregar producto </ botón >
+        < botón  tipo = " botón " clase = " btn btn-secondary d-none " id = " updateButton " > Actualizar producto </ botón >
+        < botón  tipo =" botón " clase =" btn btn-warning d-none " id =" cancelButton " > Cancelar </ botón >
+    </formulario>​​
+
+    <!-- Tabla para mostrar los productos -->
+    < tabla  clase =" tabla tabla-rayada mt-4 " >
+        <cabeza>​​
+            <tr>​​
+                < th > Nombre del Producto </ th >
+                < th > Precio </ th >
+                < th > Acciones </ th >
+            </tr>​​
+        </cabeza>​​
+        < tbody  id = " listaProductos " > </ tbody >
+    </tabla>​​
+</div>​​
+
+
+< script  src = " https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js " > </script>​
+< script  src = " https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js " > </script>​
+< script  src = " script.js " > </script>​
+</ cuerpo >
+</html>​​
+
+// Obteniendo el formulario y la lista de productos
+const  productForm  =  document.getElementById ( ' productForm ' ) ;
+const  productList  =  document . getElementById ( 'productList' ) ;
+const  enviarButton  =  documento.getElementById ( ' enviarButton ' ) ;
+const  updateButton  =  document.getElementById ( ' updateButton ' ) ;
+const  cancelButton  =  document.getElementById ( ' cancelButton ' ) ;
+
+deje que  los productos  =  [ ] ;
+deje que  currentIndex  =  - 1 ;
+
+// Función para agregar un producto
+función  addProduct ( nombre ,  precio )  {
+    const  producto  =  { nombre , precio } ;
+    productos . push ( producto ) ;
+    renderProductList ( ) ;
+}
+
+// Función para actualizar un producto
+función  actualizarProducto ( índice ,  nombre ,  precio )  {
+    productos [ índice ] . nombre  =  nombre ;
+    productos [ índice ] . precio  =  precio ;
+    restablecerFormulario ( ) ;
+    renderProductList ( ) ;
+}
+
+// Función para renderizar la lista de productos
+función  renderProductList ( )  {
+    listaDeProductos.innerHTML = ' ' ;​  
+    productos . forEach ( ( producto ,  índice )  =>  {
+        const  productRow  =  document .createElement ( ' tr' ) ;
+        productoRow . innerHTML  =  `
+            <td> ${ producto . nombre } </td>
+            <td>$ ${ producto . precio . toFixed ( 2 ) } </td>
+            <td>
+                <button class="btn btn-warning btn-sm" onclick="editProduct( ${ index } )">Editar</button>
+                <button class="btn btn-danger btn-sm" onclick="deleteProduct( ${ index } )">Eliminar</button>
+            </td>
+        ` ;
+        productList .appendChild ( productRow ) ;​
+    } ) ;
+}
+
+// Función para eliminar un producto
+función  eliminarProducto ( índice )  {
+    productos . splice ( índice ,  1 ) ;
+    renderProductList ( ) ;
+}
+
+// Función para editar un producto
+función  editarProducto ( índice )  {
+    const  producto  =  productos [ índice ] ;
+    documento . getElementById ( 'productName' ) . value  =  producto . nombre ;
+    documento . getElementById ( 'precioProducto' ) . valor  =  producto . precio ;
+    currentIndex  =  índice ;
+    enviarBotón .classList .add ( ' d-none ' ) ;
+    updateButton . classList . remove ( 'd-none' ) ;
+    cancelButton . classList . remove ( 'd-none' ) ;
+}
+
+// Función para restablecer el formulario
+función  resetForm ( )  {
+    documento . getElementById ( 'nombreProducto' ) . valor  =  '' ;
+    documento . getElementById ( 'precioProducto' ) . valor  =  '' ;
+    índiceActual  =  - 1 ;
+    botónEnviar.classList.remove ( ' d - none ' ) ;
+    updateButton . classList . add ( 'd-none' ) ;
+    cancelButton . classList . add ( 'd-none' ) ;
+}
+
+// Oyente de eventos para el formulario
+productForm .addEventListener ( 'enviar' , ( evento ) = > {   
+    evento .preventDefault ( ) ;​
+    const  nombre  =  documento . getElementById ( 'nombreProducto' ) . valor ;
+    const  precio  =  parseFloat ( documento.getElementById ( ' precioProducto ' ) . valor ) ;
+
+    si  ( índiceActual  ===  - 1 )  {
+        addProduct ( nombre ,  precio ) ;
+    }  demás  {
+        updateProduct ( currentIndex ,  nombre ,  precio ) ;
+    }
+
+    restablecerFormulario ( ) ;
+} ) ;
+
+// Oyente de eventos para cancelar la edición
+cancelButton .addEventListener ( 'click ' , resetForm ) ; 
